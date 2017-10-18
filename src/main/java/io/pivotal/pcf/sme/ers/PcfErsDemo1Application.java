@@ -2,6 +2,7 @@ package io.pivotal.pcf.sme.ers;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * PcfErsDemo1Application
@@ -15,6 +16,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author mborges
  *
  */
+@EnableAspectJAutoProxy
 @SpringBootApplication
 public class PcfErsDemo1Application {
 
