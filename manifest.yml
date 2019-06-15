@@ -1,12 +1,10 @@
 ---
 applications:
-- name: attendees-a
+- name: ers-demo
   memory: 768M
-  instances: 1
-  host: attendees-candidate
+  instances: 3
+  host: ers-demo
   path: target/pcf-ers-demo-0.0.1-SNAPSHOT.jar
-  buildpack: java_buildpack_offline_v4
-  services: 
-    - my-mysql
-  env:
-    SPRING_PROFILES_ACTIVE: cloud
+  buildpack: java_buildpack
+#  services:
+#   - my-mysql

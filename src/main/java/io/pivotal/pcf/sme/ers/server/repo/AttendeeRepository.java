@@ -15,9 +15,6 @@ public interface AttendeeRepository extends JpaRepository<Attendee, Long> {
     //@RestResource(exported = false)
 	//Page<Attendee> findAll(Pageable pageable);
 
-    @RestResource(exported = false)
-    Attendee findById(Long id);
-
     @RestResource(path = "name", rel = "name")
     Page<Attendee> findByFirstNameIgnoreCase(@Param("q") String firstName, Pageable pageable);
 
