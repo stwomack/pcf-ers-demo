@@ -44,7 +44,12 @@ $ ./mvnw spring-boot:run
 Then go to the http://localhost:8080 in your browser
 
 ### Running on Cloud Foundry
-Take a look at the manifest file for the recommended setting. Adjust them as per your environment.
+Take a look at the manifest file for the recommended settings. Adjust them as per your environment. For example, your foundation's java buildpack may be `java_buildpack` or `java_buildpack_offline`.
+
+Make sure to build the java jar first
+```
+$ ./mvnw install
+```
 
 ## Labs/Demo Scripts summary
 We have a [Labs](https://github.com/Pivotal-Field-Engineering/pcf-ers-demo/tree/master/Labs) folder to help you learn PCF. These labs can be used for workshops or self-training.    
