@@ -1,4 +1,3 @@
----
 applications:
 - name: ers-demo
   memory: 768M
@@ -8,3 +7,4 @@ applications:
   buildpack: java_buildpack
 #  services:
 #   - my-mysql
+  instances: 2
